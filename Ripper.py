@@ -13,7 +13,7 @@ try:
 except ImportError:
     os.system('pip2 install requests')
     os.system('pip2 install mechanize')
-    os.system('python2 Marwat.py')
+    os.system('python2 Ripper.py')
 
 #Browser Setting
 reload(sys)
@@ -80,7 +80,7 @@ def menu2():
 		os.system('clear')
 		print"[!] Token Not Found"
 		os.system('rm -rf login.txt')
-		os.system('python2 Marwat.py')
+		os.system('python2 Ripper.py')
 		time.sleep(1)
 	try:
 		otw = requests.get('https://graph.facebook.com/me?access_token='+toket)
